@@ -1,0 +1,15 @@
+body {
+    background-color: #92c6ff;
+}
+.interview-container {
+    max-width: 800px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 50px;
+}
+.question {
+    font-weight: bold;
+    margin-top: 20px;
+}
