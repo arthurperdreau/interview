@@ -3,146 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Interview</title>
     <link rel="stylesheet" href="/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Interview</title>
     <style>
         body {
-            background-color: #e3f2fd;
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            padding: 2rem;
         }
 
         .interview-container {
-            max-width: 900px;
-            background: #ffffff;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            margin: 60px auto;
-            border-top: 8px solid #0d6efd;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .interview-header h2 {
-            font-size: 2rem;
+        h2, h4, h5 {
             font-weight: bold;
-            color: #0d6efd;
-        }
-
-        .interview-header h4,
-        .interview-header h5 {
-            color: #495057;
-        }
-
-        .interview-header p {
-            font-size: 0.9rem;
-            color: #6c757d;
         }
 
         .question {
-            font-weight: 600;
-            background-color: #f1f8ff;
-            padding: 10px 15px;
-            border-left: 5px solid #0d6efd;
-            margin-top: 30px;
-            border-radius: 4px;
+            font-weight: bold;
+            margin-top: 1.5rem;
         }
 
-        .interview-container img {
-            object-fit: cover;
-            transition: transform 0.2s;
+        .text-muted {
+            color: #6c757d !important;
         }
 
-        .interview-container img:hover {
-            transform: scale(1.02);
+        .text-center {
+            text-align: center;
         }
 
-        footer {
-            background-color: #f8f9fa;
-            border-top: 2px solid #dee2e6;
-            padding: 15px;
-            border-radius: 0 0 15px 15px;
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .mb-3, .mb-2 {
+            margin-bottom: 1rem;
+        }
+
+        .border-top {
+            border-top: 1px solid #ddd;
+        }
+
+        .pt-3 {
+            padding-top: 1rem;
         }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <div class="interview-container">
-        <div class="interview-header mb-4 text-center">
-            <h2>Interview avec PERDREAU Arthur</h2>
-            <h4>Étudiant à l'École Supérieure du Digital</h4>
-            <h5>Bachelor Développeur Web</h5>
-            <p>Publié le 12 mai 2025</p>
-        </div>
-
-        <div class="interview-content">
-            <p class="question">Q : Pouvez-vous nous parler de Phenix-Info ?</p>
-            <p>Bien sûr ! Phenix-Info est une agence web spécialisée dans la création de sites internet, le développement web, le référencement, l'infogérance serveur...</p>
-            <img src="images/staff.png" class="img-fluid rounded border mb-4" alt="">
-
-            <p class="question">Q : Quelles ont été tes missions lors de ton stage ?</p>
-            <p>Mon stage de deux mois s’est déroulé du 24 février au 11 avril 2025...</p>
-
-            <p class="question">Q : Qu’est-ce que PrestaShop ?</p>
-            <p>PrestaShop est une plateforme open-source de création de boutiques en ligne...</p>
-
-            <p class="question">Q : Et quelle a été ta première mission sur PrestaShop ?</p>
-            <p>Il faut d'abord savoir que tout site peut être sujet à une attaque malveillante...</p>
-            <img src="images/CSS1.png" class="img-fluid rounded border mb-3" alt="">
-            <img src="images/CSS2.png" class="img-fluid rounded border mb-3" alt="">
-            <img src="images/CSS3.png" class="img-fluid rounded border mb-3" alt="">
-
-            <p class="question">Q : Cela montre bien l’importance de l’environnement de travail...</p>
-            <p>Le module s'appelle DNSBL. Il vérifie chaque requête émise sur le site PrestaShop...</p>
-
-            <p class="question">Q : Qu’entendez-vous par “bloqué” ?</p>
-            <p>Par "bloqué", j’entends que l’utilisateur ne pourra plus accéder au site...</p>
-            <img src="images/classement.png" class="img-fluid rounded border mb-3" alt="">
-
-            <p class="question">Q : Et si l'attaquant ne vient pas d’un pays listé ?</p>
-            <p>C’est là que le reste du module entre en jeu...</p>
-
-            <p class="question">Q : Un exemple de regex ?</p>
-            <p>Oui. La regex <code>/\b(select|update)\b\s+(?=(from|set|where|join|into|values|prepare))/i</code> permet...</p>
-
-            <p class="question">Q : Comment est construite cette regex ?</p>
-            <p>L’expression commence et se termine par des <code>/</code>...</p>
-            <img src="images/SQL.png" class="img-fluid rounded border mb-3" alt="">
-
-            <p class="question">Q : Et que se passe-t-il si une attaque est détectée ?</p>
-            <p>L’utilisateur est immédiatement bloqué...</p>
-
-            <p class="question">Q : D'autres missions ?</p>
-            <p>J’ai aussi travaillé à la détection et au blocage des attaques XSS...</p>
-            <img src="images/XSS.png" class="img-fluid rounded border mb-3" alt="">
-
-            <p class="question">Q : D’autres tâches en sécurité ?</p>
-            <p>Oui, sur certains sites il est possible d’uploader des fichiers...</p>
-            <div class="row">
-                <div class="col-md-4 mb-3"><img src="images/Screenshot%20from%202025-04-09%2014-50-05.png" class="img-fluid rounded border" alt=""></div>
-                <div class="col-md-4 mb-3"><img src="images/Screenshot%20from%202025-04-09%2014-50-27.png" class="img-fluid rounded border" alt=""></div>
-                <div class="col-md-4 mb-3"><img src="images/Screenshot%20from%202025-04-09%2014-50-58.png" class="img-fluid rounded border" alt=""></div>
+<div class="container d-flex justify-content-center">
+    <div class="interview-container w-100">
+        <div class="d-flex align-items-center">
+            <div class="ms-3">
+                <h2 class="mb-3">Interview avec PERDREAU Arthur</h2>
+                <h4 class="text-muted">Étudiant à l'École Supérieure du Digital</h4>
+                <h5 class="text-muted mb-2">Bachelor Développeur Web</h5>
+                <p class="text-muted">Publié le 12 mai 2025</p>
             </div>
-
-            <p>Cette fonction vérifie qu’au moins un fichier a bien été uploadé...</p>
-
-            <p class="question">Q : Encore d’autres choses sur la sécurité ?</p>
-            <p>Non, cela résume l’essentiel de mon travail sur la sécurité...</p>
-            <img src="images/Screenshot%20from%202025-04-11%2009-42-45.png" class="img-fluid rounded border mb-3" alt="">
-            <img src="images/Screenshot%20from%202025-04-11%2009-43-09.png" class="img-fluid rounded border mb-3" alt="">
-
-            <p class="question">Q : En résumé, comment as-tu vécu ce stage ?</p>
-            <p>J'ai trouvé ce stage très enrichissant...</p>
         </div>
 
-        <footer class="text-center mt-4">
-            <p class="text-secondary mb-0">© 2025 Interview Magazine | Design par Arthur</p>
-        </footer>
-    </div>
-</div>
+        <div>
+            <p class="question">Q : Pouvez-vous nous parler de Phenix-Info ?</p>
+            <p>Bien sûr ! Phenix-Info est une agence web spécialisée dans la création de sites internet, le développement web, le référencement, l'infogérance serveur, le design graphique ainsi que les logiciels de gestion. Leurs locaux se trouvent au 19 Rue de Prony à Villefranche-sur-Saône. Il y a 5 personnes dans cette entreprise. La première personne est Damien Bellegueulle, le directeur de cette agence. Ensuite, il y a Arthur Boucher qui développe les sites, Sébastien Chenal qui s'occupe du web design et enfin Samuel et Alexandre Monange, des associés.</p>
+            <img src="images/staff.png" alt="Staff" class="border mb-3">
+        </div>
 
-<script src="/js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <div>
+            <p class="question">Q : Quelles ont été tes missions lors de ton stage ?</p>
+            <p>Mon stage de deux mois s’est déroulé du 24 février au 11 avril 2025. À mon arrivée, j’ai dû installer certains outils pour commencer à travailler. Le premier outil à installer a été PrestaShop.</p>
+        </div>
 
-</body>
-</html>
+        <div>
+            <p class="question">Q : Qu’est-ce que PrestaShop ?</p>
+            <p>PrestaShop est une plateforme open-source de création de boutiques en ligne, aussi appelée CMS. Elle permet de gérer facilement les produits, les commandes, les paiements et les expéditions. Grâce à PrestaShop, les responsables de boutique peuvent gérer leur site sans connaissances techniques en code.</p>
+        </div>
+
+        <div>
+            <p class="question">Q : Et quelle a été ta première mission sur PrestaShop ?</p>
+            <p>Il faut d'abord savoir que tout site peut être sujet à une attaque malveillante. Or, le code source de PrestaShop n’intègre pas nativement de mesures de sécurité avancées. Pour pallier cela, Damien a conçu un module de sécurité. Ma première mission a donc été d’améliorer ce module, notamment son aspect visuel. J’ai refait le CSS du module DNSBL en utilisant Bootstrap 4.0 et du CSS de base, en conservant la charte graphique de PrestaShop, notamment le bleu comme couleur principale.</p>
+            <p>J’ai aussi remplacé les icônes existants par des icônes plus intuitives pour améliorer la navigation. De plus, j’ai corrigé les problèmes d’alignement des éléments.</p>
+            <p>Le module DNSBL catégorise toutes les attaques détectées sur le site. Pour simplifier leur lecture, j’ai introduit un système de couleurs : par exemple, les attaques de type injection SQL sont affichées en rouge. Cette mission m’a permis de comprendre l’impact du design sur la lisibilité et l’efficacité, et combien l’usage de couleurs et d’icônes peut accélérer la compréhension.</p>
+            <img src="images/CSS1.png" alt="CSS1" class="border mb-3">
+            <img src="images/CSS2.png" alt="CSS2" class="border mb-3">
+            <img src="images/CSS3.png" alt="CSS3" class="border">
+        </div>
+
+        <div>
+            <p class="question">Q : Cela montre bien l’importance de l’environnement de travail. Et comment fonctionne ce module ?</p>
+            <p>Le module s'appelle DNSBL. Il vérifie chaque requête émise sur le site PrestaShop. Il est chargé avant le site grâce à un preloader. Ensuite, à chaque requête, il vérifie d’abord si l’utilisateur provient d’un pays figurant dans une liste noire. Si c’est le cas, l’accès est bloqué afin d’améliorer les performances et la sécurité.</p>
+        </div>
+
+        <div>
+            <p class="question">Q : Qu’entendez-vous par “bloqué”, et pourquoi existe-t-il une liste noire de pays ?</p>
+            <p>Par "bloqué", j’entends que l’utilisateur ne pourra plus accéder au site. Concernant la liste noire, il faut savoir que la majorité des attaques proviennent de certains pays. Bloquer automatiquement ces pays permet de réduire significativement les risques.</p>
+            <img src="images/classement.png" alt="Classement des pays" class="w-100 border rounded mb-3">
+        </div>
+
+        <div>
+            <p class="question">Q : Ok, mais si la personne souhaitant attaquer ne se trouve pas dans un pays figurant sur la liste noire ?</p>
+            <p>C’est là que le reste du module entre en jeu. Lorsqu’un client envoie une requête, le module vérifie d’abord si le corps de la requête contient du JSON ou du XML, qui peuvent être utilisés à des fins malveillantes. Ensuite, d’autres types d’attaques sont détectés comme les injections SQL ou autres.</p>
+            <p>Mon travail a été de bloquer les attaques SQL. Ces attaques permettent aux hackers d’insérer du code malveillant dans des requêtes SQL pour manipuler une base de données. Pour les bloquer, nous avons utilisé des expressions régulières, qui permettent d’identifier certains motifs dans les URL ou les corps des requêtes.</p>
+        </div>
+
+        <div>
+            <p class="question">Q : Est-ce que vous avez un exemple de regex ?</p>
+            <p>Oui. Par exemple, la regex <code>/\b(select|update)\b\s+(?=(from|set|where|join|into|values|prepare))/i</code> permet de détecter les requêtes SQL contenant <code>SELECT</code> ou <code>UPDATE</code> suivis immédiatement de mots-clés SQL comme <code>FROM</code>, <code>SET</code> ou <code>WHERE</code>.</p>
+        </div>
+
+        <div>
+            <p class="question">Q : Pouvez-vous m’expliquer comment est construite cette regex ?</p>
+            <p>Bien sûr. L’expression commence et se termine par des <code>/</code>, ce qui est la syntaxe standard. Le <code>i</code> à la fin indique que la recherche ne tient pas compte de la casse, donc elle reconnaîtra un select tout en majuscules, tout en minuscules ou même à moitié majuscules et moitié minuscules. Le <code>\b</code> représente une limite de mot, cela permet de ne détecter que les mots entiers. <code>\s+</code> signifie qu’il doit y avoir au moins un espace après <code>SELECT</code> ou <code>UPDATE</code>. Enfin, <code>(?= )</code> est une anticipation pour vérifier qu’un mot-clé comme <code>FROM</code> suit immédiatement.</p>
+            <img src="images/SQL.png" alt="SQL" class="w-100 border rounded">
+        </div>
+
+        <div>
+            <p class="question">Q : Et que se passe-t-il si une attaque est détectée ?</p>
+            <p>C’est simple, l’utilisateur est immédiatement bloqué. Si cette personne tente plus de 10 attaques en moins de 5 minutes, elle est bannie du site.</p>
+        </div>
+
+        <div>
+            <p class="question">Q : Intéressant. Quelles ont été tes autres missions ?</p>
+            <p>En plus du module DNSBL, j’ai aussi travaillé à la détection et au blocage des attaques XSS. Une attaque XSS permet à un pirate d’exécuter du code JavaScript malveillant dans le navigateur d’un utilisateur. J’ai utilisé des expressions régulières pour détecter ce type de code dans les formulaires ou les contenus. Cela m’a permis de maîtriser les regex, un outil très utile pour valider des formulaires, extraire des données ou rechercher des motifs complexes.</p>
+            <img src="images/XSS.png" alt="XSS" class="w-100 border rounded">
+        </div>
+
+        <div>
+            <p class="question">Q : Ah oui, c’est très utile les regex. As-tu fait autre chose concernant la sécurité ?</p>
+            <p>Oui, bien sûr ! Sur certains sites web, il est possible d’uploader des fichiers, mais certains fichiers peuvent cacher du code malveillant. J’ai donc développé une fonction de vérification des fichiers uploadés.</p>
+            <div class="mb-2">
+                <img src="images/Screenshot%20from%202025-04-09%2014-50-05.png" class="w-100 border rounded" alt="Upload Screenshot">
+                <img src="images/Screenshot%20from%202025-04-09%2014-50-27.png" class="w-100 border rounded" alt="Upload Screenshot">
+                <img src="images/Screenshot%20from%202025-04-09%2014-50-58.png" class="w-100 border rounded" alt="Upload Screenshot">
+            </div>
+            <p>Cette fonction commence par vérifier qu’au moins un fichier a bien été uploadé. Ensuite, elle vérifie si le fichier a été transféré correctement. Si une erreur est détectée, le fichier est ignoré.</p>
+            <p>Elle récupère ensuite des informations comme le nom, la taille, le chemin temporaire, et l’extension du fichier. Seuls certains types de fichiers sont autorisés : images, PDF, Word, Excel ou CSV.</p>
+            <p>Le type MIME réel du fichier est vérifié via la bibliothèque PHP finfo et la commande système file pour détecter les fichiers déguisés.</p>
+            <p>Ensuite, le contenu du fichier est scanné pour détecter du code PHP caché, notamment dans les fichiers polyglottes comme des images contenant du code. Les fichiers sont lus en texte et en hexadécimal.</p>
+            <p>Les SVG sont encore plus strictement contrôlés, car ils peuvent contenir du JavaScript ou des entités XML dangereuses. La fonction recherche des balises <code>&lt;script&gt;</code>, des attributs comme <code>onload</code>, ou des entités XML risquées.</p>
+            <p>Enfin, si le fichier dépasse 16 Mo, il est bloqué pour éviter toute surcharge mémoire. Si un problème est détecté, la fonction renvoie un objet d’erreur. Sinon, elle retourne <code>null</code>, ce qui signifie que le fichier est sûr.</p>
+        </div>
+
+        <div>
+            <p class="question">Q : Ah oui, cette fonction vérifie beaucoup de points de sécurité. Avez-vous fait autre chose pendant votre stage concernant la sécurité ?</p>
+            <p>Non, mon travail sur la sécurité des sites web s'est arrêté ici.</p>
+            <p>Cependant, j'ai eu à concevoir un script PHP pour lire un fichier CSV, décoder et nettoyer les données en base64 de la colonne PAYLOAD_TEXT_OR_BASE64, puis enregistrer le
